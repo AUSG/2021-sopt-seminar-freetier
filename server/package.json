@@ -1,7 +1,7 @@
 {
-    "name": "ts-bootstrap",
+    "name": "2021-sopt-seminar-freetier",
     "version": "1.0.0",
-    "description": "Typescript Bootstrap",
+    "description": "Freetier seminar server",
     "main": "index.js",
     "scripts": {
         "build": "tsc",
@@ -11,14 +11,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/whitesoil/ts-bootstrap.git"
+        "url": "git+https://github.com/AUSG/2021-sopt-seminar-freetier.git"
     },
     "author": "Seon Namkung",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/whitesoil/ts-bootstrap/issues"
+        "url": "https://github.com/AUSG/2021-sopt-seminar-freetier/issues"
     },
-    "homepage": "https://github.com/whitesoil/ts-bootstrap#readme",
+    "homepage": "https://github.com/AUSG/2021-sopt-seminar-freetier#readme",
     "husky": {
         "hooks": {
             "pre-commit": "lint-staged"
