@@ -14,8 +14,10 @@ module.exports = {
                 ignoreComments: true,
             },
         ],
-        "@typescript-eslint/explicit-module-boundary-types": 0,
+        '@typescript-eslint/explicit-module-boundary-types': 0,
         'no-console': ['error', { allow: ['warn', 'error'] }],
+        '@typescript-eslint/no-explicit-any': 'off',
+        '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: 'next' }],
     },
     settings: {
         'import/resolver': {
