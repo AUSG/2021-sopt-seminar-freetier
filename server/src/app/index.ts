@@ -1,6 +1,5 @@
 /**
  * Express App
- * Last Modified: 남궁 선, 2020.10.30
  */
 import express, { Request, Response, NextFunction, Express } from 'express';
 import morgan from 'morgan';
