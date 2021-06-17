@@ -18,3 +18,14 @@ export interface ResultSetHeader {
     warningStatus: number;
     changedRows: number;
 }
+
+export interface Meeting {
+    id: string;
+    name: string;
+    roomId: string;
+    start: Date;
+    end: Date | null;
+    participants: number | null;
+    createdAt: Date;
+    updatedAt: Date;
+}

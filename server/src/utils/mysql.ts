@@ -22,7 +22,7 @@ class Database {
 
             const result: [any, any[]] = await this.connection.query(query, args);
 
-            return result[0];
+            return result[0] as T;
         } catch (e) {
             throw e;
         }
