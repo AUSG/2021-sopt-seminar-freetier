@@ -96,7 +96,7 @@ router.post('/:meetingId', async (req: Request, res: Response, next: NextFunctio
 });
 
 // 미팅 종료
-router.delete('/:meetingId', async (req: Request, res: Response, next: NextFunction) => {
+router.put('/:meetingId', async (req: Request, res: Response, next: NextFunction) => {
     try {
         const { meetingId } = req.params;
 
