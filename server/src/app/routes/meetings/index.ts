@@ -34,7 +34,7 @@ router.post('/', async (req: Request, res: Response, next: NextFunction) => {
             throwError('Bad Request', 400);
         }
 
-        const room = await PCA.createRoom('private', name, 'default');
+        const room = await PCA.createRoom('private', name, '6010ddd3e1ed810009878b55');
         const current = new Date();
 
         const meeting: Meeting = {
@@ -60,6 +60,7 @@ router.post('/', async (req: Request, res: Response, next: NextFunction) => {
         res.json({ meeting });
         res.end();
     } catch (e) {
+        console.error(e.response.data)
         next(e);
     }
 });
@@ -76,7 +77,7 @@ router.post('/:meetingId', async (req: Request, res: Response, next: NextFunctio
 
         const meeting: Meeting = await getMeeting(meetingId);
 
-        if (checkData(meeting)) {
+        if (!checkData(meeting)) {
             throwError('Bad Request', 400);
         }
 
@@ -102,7 +103,7 @@ router.put('/:meetingId', async (req: Request, res: Response, next: NextFunction
 
         const meeting: Meeting = await getMeeting(meetingId);
 
-        if (checkData(meeting)) {
+        if (!checkData(meeting)) {
             throwError('Bad Request', 400);
         }
 
@@ -112,7 +113,7 @@ router.put('/:meetingId', async (req: Request, res: Response, next: NextFunction
 
         meeting.end = current;
         meeting.updatedAt = current;
-        meeting.participants = room.members.length;
+        meeting.participants = room.members?.length ?? 0;
 
         await DB.query('UPDATE Meeting SET end = ?, participants = ? WHERE id = ?', meeting.end, meeting.participants, meeting.id);
 
