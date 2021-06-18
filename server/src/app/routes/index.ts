@@ -7,7 +7,7 @@ import meetings from './meetings';
 
 const router: Router = Router({ mergeParams: true });
 
-router.use('/meeting', meetings);
+router.use('/meetings', meetings);
 
 router.get('/', async (req: Request, res: Response, next: NextFunction) => {
     try {
