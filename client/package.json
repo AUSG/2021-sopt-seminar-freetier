@@ -1,7 +1,7 @@
 {
-  "name": "ausg-freetier",
-  "version": "0.1.0",
-  "private": true,
+  "name": "2021-sopt-seminar-freetier",
+  "version": "1.0.0",
+  "description": "Freetier seminar client",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -18,6 +18,16 @@
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AUSG/2021-sopt-seminar-freetier.git"
+  },
+  "author": "AUSG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AUSG/2021-sopt-seminar-freetier/issues"
+  },
+  "homepage": "https://github.com/AUSG/2021-sopt-seminar-freetier#readme",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
