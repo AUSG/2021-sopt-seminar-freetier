@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## 사용방법
+- utils/axios 에서 객체 생성에서 Endpoint를 수정하셔야 합니다.
+
 ## Available Scripts
 
 In the project directory, you can run:
