@@ -60,7 +60,6 @@ router.post('/', async (req: Request, res: Response, next: NextFunction) => {
         res.json({ meeting });
         res.end();
     } catch (e) {
-        console.error(e.response.data)
         next(e);
     }
 });
