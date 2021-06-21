@@ -1,7 +1,7 @@
 # 서버
 
 ## 사용법
-
+-   사전에 https://pagecall.io 에서 API Key를 발급받으셔야 합니다.
 -   .env에서 설정값을 변경하여 실행합니다.
 -   package.json의 실행 명령을 참고해주세요.
 -   `npm start`후 종료를 원하시면 글로벌에 pm2를 설치하셔서 `pm2 stop all` 명령어를 입력하시면 됩니다.
