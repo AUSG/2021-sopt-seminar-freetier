@@ -108,12 +108,13 @@ router.put('/:meetingId', async (req: Request, res: Response, next: NextFunction
         }
 
         const { room } = await PCA.updateRoom(meeting.roomId, true);
+        const members = await PCA.getMembers(room.id, 0, 1000);
 
         const current = new Date();
 
         meeting.end = current;
         meeting.updatedAt = current;
-        meeting.participants = room.members?.length ?? 0;
+        meeting.participants = members.length;
 
         await DB.query('UPDATE Meeting SET end = ?, participants = ? WHERE id = ?', meeting.end, meeting.participants, meeting.id);
 
