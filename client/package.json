@@ -27,7 +27,6 @@
   "bugs": {
     "url": "https://github.com/AUSG/2021-sopt-seminar-freetier/issues"
   },
-  "homepage": "https://github.com/AUSG/2021-sopt-seminar-freetier#readme",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
